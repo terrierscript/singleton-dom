@@ -1,9 +1,16 @@
 module.exports = function(id){
-  var cache = document.getElementById(id)
+  var doc = window.document
+  var cache = doc.getElementById(id)
   if(cache){
     return cache
   }
-  var item = document.createElement('div')
+
+  var item = doc.createElement('div')
   item.id = id
+
+  var container = doc.body
+  container.appendChild(item)
+
   return item
 }
+
