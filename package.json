@@ -1,12 +1,18 @@
 {
   "name": "singleton-dom",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Tiny function for insert or find dom element for virtual dom container ( e.g. ReactDom.render )",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "keywords": ["element", "dom", "createElement", "getElementById"],
+  "files": [
+    "index.js"
+  ],
+  "author": "inuscript",
+  "license": "ISC",
+  "devDependencies": {
+    "jsdom": "^9.4.5"
+  }
 }
